@@ -26,6 +26,9 @@ public class GameSettings : ScriptableObject
     public bool CursorVisible;
     public bool CursorLocked;
 
+    [Header("Billboard Settings")]
+    public float BillboardLerpAmount;
+
     [Header("Player Settings")]
     public float PlayerSpeed;
     public float PlayerJumpStrenght;

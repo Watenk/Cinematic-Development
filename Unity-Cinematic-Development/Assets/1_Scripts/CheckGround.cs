@@ -7,7 +7,7 @@ public class CheckGround : MonoBehaviour
 {
     public bool IsOnGround { get; private set; }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {

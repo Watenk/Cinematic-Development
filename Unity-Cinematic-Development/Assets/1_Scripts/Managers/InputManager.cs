@@ -19,6 +19,7 @@ public class InputManager : MonoBehaviour
     public event Action OnADown;
     public event Action OnSDown;
     public event Action OnDDown;
+    public event Action OnTDown;
 
     //Mouse
     public event Action<Vector2> OnMouseMovement;
@@ -54,6 +55,7 @@ public class InputManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) && OnADown != null) { OnADown(); }
         if (Input.GetKeyDown(KeyCode.S) && OnSDown != null) { OnSDown(); }
         if (Input.GetKeyDown(KeyCode.D) && OnDDown != null) { OnDDown(); }
+        if (Input.GetKeyDown(KeyCode.T) && OnTDown != null) { OnTDown(); }
 
         ////Mouse
         Vector2 mouseDir = new Vector2(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"));
